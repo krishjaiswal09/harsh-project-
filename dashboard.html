@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QTrip - Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      /* Basic Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body styling for full-height layout */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Navigation bar */
+      nav {
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        margin: 0 15px;
+      }
+
+      .navbar-brand {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      /* Hero Section */
+      .hero-image {
+        background-image: url("assets/hero.jpg"); /* Replace with actual image */
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+      }
+
+      .hero-image h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+
+      .hero-image p {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .hero-input {
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        width: 300px;
+      }
+
+      /* Adventure Grid */
+      .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 0;
+        flex-grow: 1; /* Ensures this area grows to push the footer to the bottom */
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .tile {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        width: 22%;
+        transition: transform 0.3s ease;
+      }
+
+      .tile:hover {
+        transform: scale(1.05);
+      }
+
+      .tile img {
+        /* height: 250px; */
+        /* object-fit: cover; */
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      .tile h5 {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+
+      .tile h6 {
+        font-size: 14px;
+        color: #666;
+      }
+
+      /* Footer that sticks to the bottom */
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <a class="navbar-brand" href="/index.html">QTrip</a>
+      <div>
+        <a href="/dashboard.html">Home</a>
+        <a href="/index.html">Signout</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-image">
+      <div>
+        <h1>Welcome to QTrip!</h1>
+        <p>Explore the world with some great places to adventure around.</p>
+        <input class="hero-input" type="text" placeholder="Search a city!" />
+      </div>
+    </div>
+
+    <!-- Adventure Grid Section -->
+    <div class="container">
+      <div class="row">
+        <!-- Adventure Cards -->
+        <div class="tile">
+          <img src="assets/bengaluru.jpg" alt="Bengaluru" />
+          <h5>Bengaluru</h5>
+          <h6>100+ PLACES</h6>
+        </div>
+
+        <div class="tile">
+          <img src="assets/kolkata.jpg" alt="Kolkata" />
+          <h5>Kolkata</h5>
+          <h6>52+ PLACES</h6>
+        </div>
+
+        <div class="tile">
+          <img src="assets/goa.jpg" alt="Goa" />
+          <h5>Goa</h5>
+          <h6>160+ PLACES</h6>
+        </div>
+
+        <div class="tile">
+          <img src="assets/mumbai.jpg" alt="Mumbai" />
+          <h5>Mumbai</h5>
+          <h6>121+ PLACES</h6>
+        </div>
+
+        <div class="tile">
+          <img src="assets/dubai.jpg" alt="Dubai" />
+          <h5>Dubai</h5>
+          <h6>74+ PLACES</h6>
+        </div>
+
+        <div class="tile">
+          <img src="assets/singapore.jpg" alt="Singapore" />
+          <h5>Singapore</h5>
+          <h6>89+ PLACES</h6>
+        </div>
+
+        <div class="tile">
+          <img src="assets/paris.jpg" alt="Paris" />
+          <h5>Paris</h5>
+          <h6>150+ PLACES</h6>
+        </div>
+
+        <div class="tile">
+          <img src="assets/malaysia.jpg" alt="Malaysia" />
+          <h5>Malaysia</h5>
+          <h6>172+ PLACES</h6>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© QTrip 2023</p>
+    </footer>
+  </body>
+</html>
